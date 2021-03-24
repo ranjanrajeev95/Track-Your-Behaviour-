@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mood Tracker</title>
+  </head>
+  <body>
+      <h2>Mood Tracker</h2>
+      <div class="container">
+        <h4>Your Current Mood </h4>
+        <h1 id="mood">Hi how do You feel !</h1>
+
+      <div class="posi-nega-container">
+
+        <div>
+          <h4>Positivity</h4>
+          <p id ="positive-plus" class="feeling plus">0%</p>
+        </div>
+
+        <div>
+          <h4>Negativity</h4>
+          <p id ="negative-minus" class="feeling minus">0%</p>
+         </div> 
+      </div>
+
+      <h3>History</h3>
+      <ul class="list" id="list">
+       <!--  <li class="plus"> Happy <span>+70%</span><button class="delete-btn">X</button></li>
+        <li class="minus"> Sad <span>-60%</span><button class="delete-btn">X</button></li> -->
+      </ul>
+
+      <h3>Express How do You feel</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">How do You Feel ?</label>
+          <input type="text" id="text" placeholder="Type Your Feelings..." class="input-style">
+        </div>
+
+        <div class="form-control">
+          <label for="amount">The Estimation(%) : (positivity: + , Negativity: - )</label>
+          <input type="number" id="amount" placeholder="Enter The amount(%)..." class="input-style">
+          <small>(between 1% and 200%)</small>
+        </div>
+        <button class="btn">Add Your Feeling</button>
+      </form>
+
+      </div>
+      
+    <script src="javascript.js"></script>
+  </body>
+</html>
